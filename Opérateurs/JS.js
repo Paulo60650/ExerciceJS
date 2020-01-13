@@ -1,0 +1,10 @@
+var a = "100";
+var b = 100;
+var c = 1.00;
+var d = new Boolean([true]);
+window.alert("Ceci est une chaine de caractère : " + a);
+b--;
+alert(b);
+c = parseInt(c) + parseInt(a);
+alert(c);
+d = false;
