@@ -1,25 +1,60 @@
-var heure = prompt("Entrez une heure celon ce format \n HH:MM:SS");
-var tab = heure.split(":");
-var heure_2 = prompt("Entrez une heure celon ce format \n HH:MM:SS");
-var tab_2 = heure_2.split(":");
-var res = Array(3);
-res[2] = parseInt(tab[2]) + parseInt(tab_2[2]);
-if(res[2] > 59)
+
+function _prime(k)
 {
-    res[1] = 1;
-    res[2] = res[2] - 60;
+    var i = 3;
+    if(k <= 1)
+    {
+       return 0;
+    }
+    else if(k == 2)
+    {
+        return 1;
+    }
+    else if(k % 2 == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        while(i <= k / i)
+        {
+            if(k % i == 0)
+            {
+                return 0;
+            }
+                i = i + 2;
+        }
+    }   
+    return 1;
 }
-res[1] = parseInt(tab[1]) + parseInt(tab_2[1]);
-if(res[1] > 59)
+function _list(tab_l,size_1)
 {
-    res[0] = 1;
-    res[1] = res[1] - 60;
+    var i = 0;
+    while(i++ != size_1)
+    {
+        tab_l[i] = i;
+    }
+    return tab_l;
 }
-res[0] = parseInt(tab[0]) + parseInt(tab_2[0]);
-if(res[0] > 23)
+function _AfficheTab(tab_a)
 {
-    res[0] = res[0] - 24;
+    i = 0;
+    while(i++ != size)
+    {
+        document.write(tab_a[i - 1]+"<br>");
+    }
 }
-document.write("Le résultat est " + res[0] + ":" + res[1] + ":" + res[2]);
+var size = prompt("Quelle est le nombre max souhaité pour le tableaux ?");
+var tab = Array(size);
+var j = 0;
+_list(tab,size);
+while(j++ <= size)
+{
+   tab[j] = _prime(j);
+}
+var change = tab.splice(0, 1);
+_AfficheTab(tab);
+
+
 
 
