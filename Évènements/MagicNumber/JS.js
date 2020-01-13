@@ -1,10 +1,6 @@
 var magic = parseInt(Math.random()*100);
 var element_input = document.getElementById('Roger');
-
-
-
 function func(){
-
 var nb = document.getElementById("Roger");
 var res = nb.value;
     if (res > magic)
@@ -27,8 +23,7 @@ var res = nb.value;
         else 
         {
             window.close();
-        }
-        
+        } 
     }
 }
 element_input.addEventListener("keypress", function control(event){
