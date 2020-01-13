@@ -1,11 +1,11 @@
 var nb = prompt("Veuillez entrer un nombre");
 var i = 3;
 var res = 1;
-if(nb < 1)
+if(nb <= 1)
 {
     alert("Ce n'est pas un nombre premier");
 }
-else if(nb == 2 || nb == 1)
+else if(nb == 2)
 {
     alert("C'est un nombre premier"); 
 }

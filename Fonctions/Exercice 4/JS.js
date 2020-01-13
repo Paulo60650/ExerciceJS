@@ -1,6 +1,6 @@
 function _strtok()
 {
-    var str = prompt("Entrez liste séparé par des ; ");
+    var str = prompt("Entrez une liste séparé par des ; ");
     var str2 = ";";
     var n = prompt("Entrez le numéro correspondant au mot à extraire");
     var i = 0;

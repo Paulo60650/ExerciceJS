@@ -2,11 +2,11 @@
 function _prime(k)
 {
     var i = 3;
-    if(k < 1)
+    if(k <= 1)
     {
        return 0;
     }
-    else if(k == 2 || k == 1)
+    else if(k == 2)
     {
         return 1;
     }
