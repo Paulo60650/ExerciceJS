@@ -26,6 +26,23 @@ function _moyenne()
     res /= i;
     alert("La moyenne vaut " + res);
 }
+function _voyelle()
+{
+    var mot = prompt("Entrez un mot");
+var taille = mot.length;
+var i = 0;
+var res = 0;
+
+while(i <= taille)
+{
+    if((mot[i] == "a") || (mot[i] == "e") || (mot[i] == "i") || (mot[i] == "o") || (mot[i] == "u") || (mot[i] == "y"))
+        {
+            res++;
+        }
+    i++;
+}
+alert("Votre mot contient " + res + " voyelle(s)");
+}
 function _occurence()
 {
     var phrase = prompt("Veuillez écrire une phrase");
@@ -52,7 +69,11 @@ else if(choix == 2)
     {
         _moyenne();
     }
-else if(choix == 3 || choix == 4)
+else if(choix == 3 )
+    {
+        _voyelle3();
+    }
+else if(choix == 4 )
     {
         _occurence();
     }

@@ -5,12 +5,12 @@ var nb = document.getElementById("Roger");
 var res = nb.value;
     if (res > magic)
     {
-        document.getElementById('test').textContent = "Trop grand ! Réessayez";
+        document.getElementById('test').textContent = "Trop grand ! Réessayez ";
         document.getElementById('Roger').value = "";
     } 
     else if( res < magic)
     {
-        document.getElementById('test').textContent = "Trop petit ! Réessayez";
+        document.getElementById('test').textContent = "Trop petit ! Réessayez ";
         document.getElementById('Roger').value = "";
     }
     else if(res == magic)
