@@ -1,10 +1,10 @@
-var prenom = prompt("Veuillez écrire un prénom");
-var res;
+var tab =[];
 var i = 0;
 while(prenom != 0)
 {
-    res = res + " " + prenom;
-    prenom = prompt("Veuillez écrire un prénom");
+   var prenom = prompt("Veuillez écrire un prénom");
+    tab[i] = prenom;
     i++;
 }
-alert("Vous avez écris " + i + " prénoms " + res);
+i = i -1;
+alert("Vous avez écris " + i + " prénoms \n" + tab);
