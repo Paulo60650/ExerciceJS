@@ -14,7 +14,7 @@ function _SaisieTab(tab,size)
 }
 function _AfficheTab(tab)
 {
-    var change = tab.splice(0, 1);
+tab.splice(0, 1);
 i = 0;
 while(i++ != size)
 {
